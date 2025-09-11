@@ -24,15 +24,20 @@
     {
       "clientId": "developer-client",
       "name": "Developer Client",
+      "enabled": true,
+      "protocol": "openid-connect",
       "clientAuthenticatorType": "client-secret",
       "secret": "Yqp2jao1Ruc8UBwk7jwAIJ6Y1jsVT4qJHvQVpduK",
-      "redirectUris": [
-        "*"
-      ],
+
+      "publicClient": false,
+      "bearerOnly": false,
+      "serviceAccountsEnabled": true,
+
       "standardFlowEnabled": true,
-      "optionalClientScopes": [
-        "profile"
-      ]
+      "directAccessGrantsEnabled": false,
+
+      "redirectUris": ["*"],
+      "optionalClientScopes": ["profile"]
     }
   ],
   "clientScopes": [
