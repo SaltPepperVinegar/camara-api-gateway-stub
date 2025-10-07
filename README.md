@@ -15,7 +15,9 @@
   Added the CAMARA API `specs` and `base_path` entries required by our product.
 
 - **Deployment**  
-  Follow original repository’s deployment steps (no changes to the process beyond providing the customized `.env` and `apis.yaml`).
+  Follow original repository’s deployment steps.  
+  No changes to the process beyond providing the customized `.env` and `apis.yaml`.  
+  For more information on how to integrate our backend with the API stub, please visit our Confluence page `Camara API Stub Integration Instructions`.  
 
 The following sections are copied from README of the original repository.
 
