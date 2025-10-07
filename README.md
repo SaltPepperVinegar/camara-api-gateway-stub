@@ -1,3 +1,24 @@
+# Our Customizations on Original CAMARA API Stub
+
+- **Keycloak M2M (client_credentials)**  
+  **POST** `https://poochie.example.com/auth/realms/operator/protocol/openid-connect/token`  
+  Headers: `Content-Type: application/x-www-form-urlencoded`  
+  Body (form): `grant_type=client_credentials`, `client_id=developer-client`, `client_secret=[client_secret in original repo readme]`, `scope=[ a valid scope name ]`  
+  Response contains `access_token` → use in requests:  
+  `Authorization: Bearer [access_token]` and `Content-Type: application/json`
+
+- **.env.example**  
+  Added required environment variables
+  Deploy by using `cp .env.example .env`.
+
+- **apis.yaml**  
+  Added the CAMARA API `specs` and `base_path` entries required by our product.
+
+- **Deployment**  
+  Follow original repository’s deployment steps (no changes to the process beyond providing the customized `.env` and `apis.yaml`).
+
+The following sections are copied from README of the original repository.
+
 # CAMARA API Stubs
 
 This project implements stubbing for the [CAMARA APIs](https://camaraproject.org/)
